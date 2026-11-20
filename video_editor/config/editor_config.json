@@ -1,0 +1,53 @@
+{
+  "project_name": "ai_short_form_video_editor",
+  "version": "1.0.0",
+  "video": {
+    "output_width": 1080,
+    "output_height": 1920,
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "codec": "libx264",
+    "pixel_format": "yuv420p",
+    "crf": 18,
+    "preset": "slow"
+  },
+  "audio": {
+    "codec": "aac",
+    "bitrate": "192k",
+    "sample_rate": 44100,
+    "channels": 2,
+    "target_i_lufs": -14.0,
+    "target_lra": 7.0,
+    "target_tp_db": -1.0
+  },
+  "silence_removal": {
+    "noise_threshold_db": -30,
+    "min_silence_duration_sec": 0.45,
+    "lead_in_padding_sec": 0.08,
+    "lead_out_padding_sec": 0.08,
+    "crossfade_sec": 0.03
+  },
+  "captions": {
+    "font_name": "Helvetica-Bold",
+    "font_size": 48,
+    "primary_color_ass": "&H00FFFFFF",
+    "highlight_color_ass": "&H0000F5FF",
+    "outline_color_ass": "&H00000000",
+    "outline_thickness": 3.2,
+    "shadow_depth": 1.5,
+    "alignment": 2,
+    "margin_v": 260,
+    "max_words_per_group": 4,
+    "max_chars_per_line": 28
+  },
+  "camera": {
+    "base_scale": 1.0,
+    "punch_in_scale": 1.12,
+    "transition_frames": 8
+  },
+  "graphics": {
+    "accent_color_hex": "#00E5FF",
+    "accent_bg_rgba": "rgba(10, 20, 30, 0.75)",
+    "font_family": "Helvetica"
+  }
+}
